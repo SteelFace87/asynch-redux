@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Character({ image, name }){
+export default function Character({ name, image }){
+  console.log(image);
+  console.log('type of', typeof image);
 
   return (
     <section>
@@ -12,7 +14,6 @@ export default function Character({ image, name }){
 }
 
 Character.propTypes = {
-  image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired
 }
 ;

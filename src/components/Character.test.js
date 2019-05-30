@@ -3,9 +3,14 @@ import Character from './Character';
 import { shallow } from 'enzyme';
 
 describe('Character component', ()=>{
-  console.log('character', Character);
+
+  const testObject = {
+    image:'test image',
+    name:'test name'
+  };
+
   it('renders a character', ()=>{
-    const wrapper = shallow(<Character image='test image' name='test name'/>);
+    const wrapper = shallow(<Character image={testObject.image} name={testObject.name}/>);
     expect(wrapper).toMatchSnapshot();
   });
 })

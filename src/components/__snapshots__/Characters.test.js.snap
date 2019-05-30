@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Characters component renders all characters with a character array 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <Character
+      image="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+      name="Rick Sanchez"
+    />
+  </li>
+  <li
+    key="1"
+  >
+    <Character
+      image="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+      name="Morty Smith"
+    />
+  </li>
+</ul>
+`;

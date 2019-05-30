@@ -4,7 +4,7 @@ import Character from './Character';
 
 export default function Characters({ characters }){
   const characterList = characters.map((character, i)=>{
-    return <li key={i}><Character character={character}/></li>;
+    return <li key={i}><Character name={character.name} image={character.image}/></li>;
   });
   return (
     <ul>
@@ -13,6 +13,6 @@ export default function Characters({ characters }){
   );
 }
 Characters.propTypes = {
-  characters:  PropTypes.object.isRequired
+  characters: PropTypes.array.isRequired
 }
 ;
