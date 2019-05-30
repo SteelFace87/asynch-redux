@@ -6,7 +6,7 @@ import { action_getCharacters } from '../actions/characterActions';
 
 
 const mapStateToProps = state => {
-  console.log('state', state);
+ 
   return {
     characters: getCharacters(state)
   };
@@ -17,6 +17,9 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(action_getCharacters());
   }
 });
+
+
+
 
 export default connect(
   mapStateToProps,
