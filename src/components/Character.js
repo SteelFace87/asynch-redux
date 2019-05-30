@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export function Character({ image, name }){
+export default function Character({ image, name }){
 
   return (
     <section>
